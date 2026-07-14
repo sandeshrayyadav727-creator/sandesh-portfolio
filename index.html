@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sandesh Yadav | Cybersecurity & Networking</title>
+<meta name="description" content="Portfolio of Sandesh Yadav, Cybersecurity & Networking student.">
+<meta name="theme-color" content="#0a0e14">
+<meta property="og:title" content="Sandesh Yadav | Cybersecurity & Networking">
+<meta property="og:description" content="Portfolio of Sandesh Yadav, Cybersecurity & Networking student.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0e14'/%3E%3Ctext x='50' y='66' font-size='46' font-family='monospace' font-weight='700' fill='%2300ff9d' text-anchor='middle'%3E_%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="preloader" class="preloader">
+  <div class="preloader-text">
+    <p id="bootLine1" class="pl-line"></p>
+    <p id="bootLine2" class="pl-line"></p>
+    <p id="bootLine3" class="pl-line"></p>
+  </div>
+</div>
+
+<canvas id="matrix-canvas"></canvas>
+
+<div class="scanline-overlay" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">sandesh<span class="accent">@</span>security<span class="cursor-blink">_</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#resume">resume</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-spotlight" id="heroSpotlight" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">// whoami</p>
+    <h1 class="hero-name">Sandesh Yadav</h1>
+    <p class="hero-role">
+      <span id="typed-text"></span><span class="type-cursor">|</span>
+    </p>
+    <p class="hero-desc">
+      Bachelor's student in Cybersecurity &amp; Networking, focused on securing systems,
+      breaking things responsibly, and building software worth defending.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-outline">Get In Touch</a>
+    </div>
+  </div>
+  <div class="hero-terminal" aria-hidden="true">
+    <div class="terminal-header">
+      <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+      <span class="terminal-title">bash</span>
+    </div>
+    <div class="terminal-body">
+      <p><span class="prompt">$</span> whoami</p>
+      <p class="out">sandesh_yadav</p>
+      <p><span class="prompt">$</span> cat focus.txt</p>
+      <p class="out">Network Security | Penetration Testing | Threat Analysis</p>
+      <p><span class="prompt">$</span> status --current</p>
+      <p class="out ok">[OK] Open to opportunities</p>
+      <p><span class="prompt">$</span> <span class="term-cursor-blink">_</span></p>
+    </div>
+  </div>
+
+  <div class="cube-wrap" aria-hidden="true">
+    <div class="cube">
+      <div class="cube-face front">&#128274;</div>
+      <div class="cube-face back">&#128737;&#65039;</div>
+      <div class="cube-face right">&#127760;</div>
+      <div class="cube-face left">&#128187;</div>
+      <div class="cube-face top">&#9889;</div>
+      <div class="cube-face bottom">&#128273;</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2 class="section-title"><span class="tag">01.</span> About Me</h2>
+  <div class="about-grid reveal">
+    <div class="about-text">
+      <p>
+        I'm Sandesh, a Bachelor's student in Cybersecurity and Networking with a strong
+        interest in how systems fail and how to make them fail safely — before someone
+        with worse intentions finds out first. My focus spans network defense, vulnerability
+        assessment, and secure software practices.
+      </p>
+      <p>
+        Alongside security, I build practical software projects to understand systems from
+        the ground up — from web applications to backend infrastructure — because
+        defending something well starts with understanding how it's built.
+      </p>
+      <p>
+        <!-- EDIT: replace with your real bio details, university name, expected graduation, etc. -->
+        Currently pursuing my degree while working on independent projects and
+        strengthening hands-on skills in labs, CTFs, and real-world builds.
+      </p>
+    </div>
+    <div class="about-facts">
+      <div class="fact-card">
+        <span class="fact-label">Education</span>
+        <span class="fact-value"><!-- EDIT: your university name --> B.Sc. Cybersecurity &amp; Networking</span>
+      </div>
+      <div class="fact-card">
+        <span class="fact-label">Focus Areas</span>
+        <span class="fact-value">Network Security · Pentesting · Threat Analysis</span>
+      </div>
+      <div class="fact-card">
+        <span class="fact-label">Currently</span>
+        <span class="fact-value">Building &amp; Learning</span>
+      </div>
+      <div class="fact-card">
+        <span class="fact-label">Based In</span>
+        <!-- EDIT: your location -->
+        <span class="fact-value">Nepal</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section section-alt">
+  <h2 class="section-title"><span class="tag">02.</span> Skills</h2>
+  <div class="skills-grid reveal">
+    <div class="skill-card">
+      <h3>Security</h3>
+      <div class="chip-row">
+        <span class="chip">Network Security</span>
+        <span class="chip">Vulnerability Assessment</span>
+        <span class="chip">Threat Analysis</span>
+        <span class="chip">Security Fundamentals</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <h3>Networking</h3>
+      <div class="chip-row">
+        <span class="chip">TCP/IP</span>
+        <span class="chip">Routing &amp; Switching</span>
+        <span class="chip">Firewalls</span>
+        <span class="chip">Network Monitoring</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <h3>Programming</h3>
+      <div class="chip-row">
+        <span class="chip">Python</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">HTML/CSS</span>
+        <span class="chip">PHP</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <h3>Tools &amp; Platforms</h3>
+      <div class="chip-row">
+        <span class="chip">Wireshark</span>
+        <span class="chip">Linux</span>
+        <span class="chip">Git</span>
+        <span class="chip">Next.js</span>
+      </div>
+      <!-- EDIT: swap chips above for tools you actually use (Nmap, Burp Suite, Kali, VirtualBox, etc.) -->
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2 class="section-title"><span class="tag">03.</span> Projects</h2>
+  <div class="projects-grid reveal">
+
+    <article class="project-card">
+      <div class="project-top">
+        <span class="folder-icon">&#128193;</span>
+        <div class="project-links">
+          <!-- EDIT: add real GitHub/live links -->
+          <a href="https://thexeviwi.com" target="_blank" rel="noopener noreferrer" aria-label="Live site">&#128279;</a>
+        </div>
+      </div>
+      <h3>TheXeviwi</h3>
+      <p>
+        A full-stack web platform built end-to-end and deployed to production —
+        covering frontend, backend, and hosting/deployment on a live domain.
+      </p>
+      <div class="chip-row">
+        <span class="chip chip-sm">Next.js</span>
+        <span class="chip chip-sm">Node.js</span>
+        <span class="chip chip-sm">Deployment</span>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <span class="folder-icon">&#128193;</span>
+        <div class="project-links">
+          <!-- EDIT: add real GitHub/live links -->
+          <a href="#" aria-label="Repository">&#128279;</a>
+        </div>
+      </div>
+      <h3><!-- EDIT: project name -->Project Name</h3>
+      <p>
+        <!-- EDIT: describe this project — what it does, what problem it solves,
+        what you learned or what security angle it involved. -->
+        Short description of a project you've built — replace this with real details.
+      </p>
+      <div class="chip-row">
+        <span class="chip chip-sm">Tech</span>
+        <span class="chip chip-sm">Tech</span>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <span class="folder-icon">&#128193;</span>
+        <div class="project-links">
+          <!-- EDIT: add real GitHub/live links -->
+          <a href="#" aria-label="Repository">&#128279;</a>
+        </div>
+      </div>
+      <h3><!-- EDIT: project name -->Project Name</h3>
+      <p>
+        <!-- EDIT: describe this project. Good candidates: a CTF writeup, a home-lab
+        network build, a small security tool/script, or a vulnerable-app walkthrough. -->
+        Short description of a project you've built — replace this with real details.
+      </p>
+      <div class="chip-row">
+        <span class="chip chip-sm">Tech</span>
+        <span class="chip chip-sm">Tech</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- RESUME / EXPERIENCE -->
+<section id="resume" class="section section-alt">
+  <h2 class="section-title"><span class="tag">04.</span> Resume &amp; Experience</h2>
+  <div class="timeline reveal">
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="timeline-date"><!-- EDIT: dates -->2023 — Present</span>
+        <h3><!-- EDIT: degree/university -->B.Sc. Cybersecurity &amp; Networking</h3>
+        <p>
+          <!-- EDIT: coursework, achievements, relevant modules -->
+          Coursework covering network security, systems administration, threat
+          modeling, and secure software development.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="timeline-date"><!-- EDIT: dates -->2023 — Present</span>
+        <h3><!-- EDIT: role/project title -->Independent Projects &amp; Self-Study</h3>
+        <p>
+          <!-- EDIT: describe hands-on work, labs, CTFs, home lab, certifications in progress -->
+          Building and deploying full-stack applications, running home-lab network
+          setups, and practicing security fundamentals through guided labs and CTFs.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="timeline-date"><!-- EDIT: dates or "In Progress" -->In Progress</span>
+        <h3><!-- EDIT: certification name, e.g. CompTIA Security+, CCNA --> Certifications</h3>
+        <p>
+          <!-- EDIT: list certifications you're pursuing or planning -->
+          Currently exploring industry certifications relevant to networking and
+          security fundamentals.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="resume-download">
+    <!-- EDIT: link this to an actual PDF resume placed in the assets folder -->
+    <a href="assets/resume.pdf" class="btn btn-outline" download>Download Resume (PDF)</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+  <h2 class="section-title"><span class="tag">05.</span> Contact</h2>
+  <div class="contact-box reveal">
+    <p class="contact-lead">
+      Open to internships, entry-level security roles, and collaboration on
+      interesting projects. Reach out — I usually reply within a day or two.
+    </p>
+    <a href="mailto:sandeshrayyadav727@gmail.com" class="email-link">
+      sandeshrayyadav727@gmail.com
+    </a>
+    <button class="btn btn-outline copy-btn" id="copyEmailBtn" type="button" data-email="sandeshrayyadav727@gmail.com">
+      Copy Email
+    </button>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Sandesh Yadav. Built with HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">&#8593;</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
